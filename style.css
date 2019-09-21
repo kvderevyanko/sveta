@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    height: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #a9fffd;
+    font-size: 1em;
+    font-family: "Comic Sans MS",sans-serif;
+    line-height: 120%;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+a:active {
+    color: crimson;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+/* Selection Block */
+::selection {background-color: #ffa171; color: darkslategray}
+::-moz-selection {background-color: #ffa171; color: darkslategray}
+
+header, footer {
+    background-color: lightgrey;
+    width: 100%;
+    min-height: 100px;
+
+}
+
+header {
+    border-bottom: dimgrey 3px double;
+}
+
+.clear {
+    clear: both;
+}
+
+
+footer {
+    border-top: dimgrey 3px double;
+}

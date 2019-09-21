@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #a9fffd;
+    font-size: 1em;
+    font-family: "Comic Sans MS", sans-serif;
+    line-height: 100%;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+    transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+    transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+}
+
+a:active {
+    color: #8b1cdc;
+    text-decoration: none;
+    transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    width: auto \9;
+}
+
+hr {
+    display: block;
+    height: 0;
+    border: 0;
+    border-top: darkblue 1px dotted;
+    padding: 0;
+
+}
+
+/* Selection Block */
+::selection {
+    background-color: #ffa171;
+    color: darkslategray
+}
+
+::-moz-selection {
+    background-color: #ffa171;
+    color: darkslategray
+}
+
+.right {
+    float: right;
+    margin-right: 15px
+}
+
+.left {
+    float: left
+}
+
+.clear {
+    clear: both;
+}
+
+header, footer {
+    background-color: lightgrey;
+    width: 98%;
+    min-height: 50px;
+}
+
+header {
+    border-bottom: dimgrey 3px double;
+    padding: 1%;
+    padding-top: 30px;
+}
+
+#page-wrap:after {
+    content: "";
+    display: block;
+}
+
+#page-wrap {
+    min-height: 94%;
+    margin-bottom: 0px;
+}
+
+footer, #page-wrap {
+    height: 10px
+}
+
+#logo {
+    font-size: 3em;
+    font-family: "monospace", sans-serif;
+
+}
+
+#contact {
+    font-size: 2em;
+    font-family: "fantasy", sans-serif;
+    margin-left: 30px;
+}
+
+input[type=text].search {
+    border: 2px dimgrey solid;
+    padding: 10px;
+    border-radius: 5px;
+    height: 20px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -15px;
+}
+
+input[type=text].search:focus {
+    border: 2px solid red
+}
+
+.reg {
+    color: lime;
+    font-size: 2em;
+    font-family: fantasy, sans-serif;
+    float: right;
+    margin-right: 70px;
+    display: inline-table;
+}
+
+#menu {
+    color: blue;
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+#menu hr {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px darkblue dotted;
+}
+
+#menuHref {
+    line-height: 30px;
+    /*display: table-caption;*/
+
+}
+
+#menuHref a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: lime;
+}
+
+#menuHref a:hover {background-color: darkorchid}
+
+/* Стили для статей */
+
+#wrapper {
+    float: left;
+    width: 100%;
+}
+
+#wrapper #articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#wrapper #articles article {
+    float: left;
+    width: 31.3333%;
+    border: 1px solid #8b1cdc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #ffa171;
+    margin-right: 2%;
+    min-height: 400px;
+    margin-top: 15px;
+}
+
+#wrapper #articles article h2 {
+    margin-left: 5%;
+    font-weight: normal;
+    width: 90%;
+    font-size: 1.7em;
+    text-align: center;
+    color: purple;
+    margin-top: 15px;
+}
+
+#wrapper #articles article p {
+    text-align: center;
+    margin: 15px;
+}
+
+#wrapper #articles article a {
+    color: darkgrey;
+    background-color: darkorchid;
+    border-radius: 1px;
+    border: dimgrey 1px solid;
+    font-size: 0.9em;
+    margin: auto;
+    padding: 10px;
+    display: inline-flex;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#wrapper #articles article a:hover {background-color: lime;
+}
+
+/* Стили для центральной панели */
+
+#soc_block {
+    background: url("../../image/5.jpg") repeat-x;
+    height: 300px;
+}
+
+.soc_block-in {
+    background-color: lightgrey;
+    min-height: 250px;
+    width: 500px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 25px;
+    border: #01232d 3px solid;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.56);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.56);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.56);
+}
+
+.soc-right {
+    float: right;
+    margin-right: 100px;
+}
+
+/* Страница о нас */
+
+#about_us {
+    float: left;
+    width: 60%;
+    border: 2px solid #47dc13;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #dddcdd;
+    min-height: 400px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+#columRight {
+    float: left;
+
+    width: 30%;
+    border: 2px solid #47dc13;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #dddcdd;
+    margin-left: 5%;
+    min-height: 400px;
+    margin-top: 30px;
+    padding: 15px;
+}
+/* Стили для футера */
+
+footer {
+    border-top: dimgrey 3px double;
+    padding: 7px 1% 7px 1%;
+    min-height: 40px;
+}
+
+footer img {
+    max-width: 20px;
+    float: left;
+    margin-right: 5px
+}

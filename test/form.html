@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Проверка</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<form method="post" action="post.php">
+    <label for="name">Имя</label> <br/>
+    <input type="text" name="name" id="name"/>
+    <br/><br/>
+
+    <label for="name1">Фамилия</label>     <br/>
+    <input type="text" name="name1" id="name1"/>
+    <br/><br/>
+
+    <label for="address">Адрес</label>  <br/>
+    <textarea name="address" id="address"></textarea>
+    <br/><br/>
+
+    <label for="country">Страна</label>  <br/>
+    <select name="country" id="country">
+        <option value="">Выберите страну</option>
+        <option value="russia">Россия</option>
+        <option value="ukrain">Украина</option>
+        <option value="usa">USA</option>
+    </select>
+<br/><br/>
+
+    <label>Пол</label> <br/>
+    <label><input type="radio" name="sex" value="Мужской" checked> Мужской</label><br>
+    <label><input type="radio" name="sex" value="Женский"> Женский</label>
+    <br><br/>
+
+    <label>
+        <input type="checkbox" name="name3" value="1"/>
+        Принимаю условия
+    </label>
+    <br><br/>
+
+    <label>E-mail</label> <br/>
+    <input type="email" name="email" id="email" required/>
+    <br/><br/>
+
+    <label>Любимый цвет</label> <br/>
+    <input type="color" name="color">
+    <br/><br/>
+
+    <label>Дата рождения</label> <br/>
+    <input type="date" name="data"/>
+    <br/><br/>
+
+        <button type="reset">Очистить форму</button>
+        <button type="submit">Отправить</button>
+
+
+
+
+
+
+</form>
+
+</body>
+</html>
