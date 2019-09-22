@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="keywords" content="site, website, text">
+    <meta name="description" content="Пробная версия сайта">
+    <title>Underground</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../image/favicon.ico">
 </head>
 <body>
+<div id="page-wrap">
+    <header>
+        <a href="index.html" title="На главную" id="logo">Underground</a>
+        <a href="about.html" title="Информация о нас"><span id="contact">О нас</span></a>
+        <input type="text" title="Введите для поиска" placeholder="Поиск" class="search"/>
+        <a href="reg.html" title="Зарегистрироваться" class="reg">Регистрация</a>
+        <a href="auth.html" title="Войти" class="reg">Вход</a>
+    </header>
+    <div class="clear"></div>
+    <center>
+        <div id="menu">Разделы<hr/></div>
+        <div id="menuHref">
+            <a href="about.html">О нас</a>
+            <a href="feedback.html">
+                <nobr>Обратная связь</nobr>
+            </a>
+            <a href="reg.html">Регистрация</a>
+            <a href="auth.html">Вход</a>
+        </div>
+    </center>
+    <div id="wrapper">
+        <div id="articles">
+            <form action="" method="post">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="Имя" placeholder="Введите ваше имя"/>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="E-mail" placeholder="ex@mail.ru" />
+                <label for="tema">Тема сообщения</label>
+                <input type="text" id="tema" name="Тема сообщения" placeholder="Введите тему сообщения" />
+                <label for="text">Введите ваше сообщения</label>
+                <textarea id="text" placeholder="Введите ваше сообщения"></textarea>
+                <input type="submit" value="Отправить" name="send" id="send">
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+
+<footer>
+    <span class="left">Все права защищены &copy; 2019</span>
+    <span class="right">Социальные сети <img src="../image/4.png"></span>
+</footer>
 
 </body>
 </html>

@@ -191,17 +191,26 @@ input[type=text].search:focus {
     margin-left: 10%;
 }
 
+    #wrapper #articles article {
+        float: left;
+        border: 1px solid #8b1cdc;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #ffa171;
+        margin-right: 2%;
+        margin-top: 15px;
+    }
+
+@media (min-width: 700px){
 #wrapper #articles article {
-    float: left;
     width: 31.3333%;
-    border: 1px solid #8b1cdc;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: #ffa171;
-    margin-right: 2%;
     min-height: 400px;
-    margin-top: 15px;
-}
+}}
+@media (max-width: 699px){
+    #wrapper #articles article {
+        width: 96%;
+        margin-bottom: 10px;
+    }}
 
 #wrapper #articles article h2 {
     margin-left: 5%;
@@ -253,6 +262,8 @@ input[type=text].search:focus {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.56);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.56);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.56);
+    max-width: 98%;
+    box-sizing: border-box;
 }
 
 .soc-right {
@@ -286,6 +297,77 @@ input[type=text].search:focus {
     min-height: 400px;
     margin-top: 30px;
     padding: 15px;
+}
+
+/* Стили для форм */
+
+form {
+    width: 60%;
+    margin-left: 20%;
+    float: left;
+}
+    form input {
+        padding: 10px;
+        border: 2px red solid;
+        border-radius: 5px;
+        float: left;
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    form label {
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    form textarea {
+        width: 60%;
+        float: left;
+        min-height: 200px;
+        border: 2px red solid;
+        border-radius: 5px;
+        clear: both;
+        background-color: #ffa171;
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
+    form textarea:focus {border: solid 2px #1f1f1f}
+
+    form input:focus {border: solid 2px #1f1f1f}
+
+    form #send {
+        float: left;
+        padding: 10px;
+        background-color: #01232d;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 2em;
+        color: azure;
+        cursor: grab;
+    }
+form #rega:hover, form #send:hover {background-color: #47dc13}
+form #rega {
+    float: left;
+    padding: 10px;
+    background-color: #01232d;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: azure;
+    cursor: pointer;
+    clear: both;
+}
+form #auth {
+    float: left;
+    padding: 10px;
+    background-color: #01232d;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: azure;
+    cursor: e-resize;
+    clear: both;
 }
 /* Стили для футера */
 
