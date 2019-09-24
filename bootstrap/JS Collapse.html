@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<br>
+
+
+
+<div class="container">
+    <a href="#" data-toggle="tooltip" title="No">cursor</a>
+</div>
+
+<div class="container">
+    <button class="btn btn-danger" data-toggle="tooltip" title="Knopka" >vid</button>
+</div>
+
+<div class="container">
+    <ul class="nav nav-pills" role="tablist">
+        <li><a href="#home" role="tab" data-toggle="pill">Домой</a> </li>
+        <li><a href="#profile" role="tab" data-toggle="pill">Профиль</a> </li>
+        <li class="active"><a href="#message" role="tab" data-toggle="pill">Сообщение</a> </li>
+        <li><a href="#settings" role="tab" data-toggle="pill">Настройка</a> </li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade " id="home">Вкладка домой</div>
+        <div role="tabpanel" class="tab-pane fade" id="profile">Вкладка профайл</div>
+        <div role="tabpanel" class="tab-pane active fade in" id="message">Вкладка с сообщениями</div>
+        <div role="tabpanel" class="tab-pane fade" id="settings">Вкладка с настройками</div>
+    </div>
+</div>
+
+<button class="btn btn-info" data-toggle="modal" data-target="#myModal">Всплывающее окно</button>
+<div id="myModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog  modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title">Заголовок окна</h4>
+            </div>
+            <div class="modal-body">Некий текст</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel-group" id="collapse-group">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Первый</a>
+        </div>
+        <div id="el1" class="collapse in">
+            <div class="panel-body">Vivamus ultricies efficitur nulla in luctus. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Integer lectus orci, semper eu varius vitae, ullamcorper sit amet magna.
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el2">Второй</a>
+            </div>
+            <div class="collapse" id="el2">
+                <div class="panel-body">Nulla turpis risus, scelerisque ac pharetra
+                    sodales, sollicitudin ac nunc. Morbi quis eros tempus, iaculis nunc vel, tempor tellus.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="btn btn-link" data-toggle="collapse" data-target="#hide">JS Collapse</button>
+<div class="collapse" id="hide">
+    Скрытый текст
+</div>
+
+<span data-toggle="collapse" data-target="#hide1">JS Collapse</span>
+<div class="collapse" id="hide1">
+    Скрытый текст
+</div>
+
+<a data-toggle="collapse" href="#hide3">JS Collapse</a>
+<div class="collapse" id="hide3">
+    Скрытый текст
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
