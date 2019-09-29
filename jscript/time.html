@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <style>body {
+        padding: 20px;
+    }</style>
+
+    <!-- var id = setInterval("myFunct_1()", 1000);
+    var counter = 0;
+    function myFunct_1() {
+    counter++
+    alert("Секунд прошло - " + counter);
+    if(counter === 3) clearInterval(id);
+    }-->
+
+</head>
+<body onload="timer()">
+
+Секунд прошло <span id="count"> -1 </span>
+
+
+<script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+    var counter = 0;
+
+    function timer() {
+        counter++
+        document.getElementById("count").innerHTML = counter;
+        setTimeout("timer()", 1000);
+    }
+
+</script>
+</body>
+</html>

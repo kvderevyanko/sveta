@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <style>body {
+        padding: 20px;
+    }</style>
+</head>
+<body>
+
+<a href="#" id="show" style="display: none" onclick="return false">Показать комментарии</a><br><br>
+<a href="#" id="hide" onclick="return false">Скрыть комментарии</a><br><br>
+
+<div id="comments">
+    <p>Комментарий 1</p>
+    <p>Комментарий 2</p>
+    <p>Комментарий 3</p>
+</div>
+
+<!--<form name="form" action="#" method="post" id="form" style="display:none" onsubmit="return false">
+    <label for="textarea"></label>
+    <textarea id="textarea" name="field" cols="40" rows="10"></textarea><br><br>
+    <input type="submit" name="send" value="Добавить комментарий" id="done">
+</form>
+<br>
+<a href="#" onclick="return false" id="add_comment">Добавить комментарий</a>-->
+<!--
+<div style="height: 150px; width: 150px; background-color: red"></div>
+<div style="height: 150px; width: 150px; background-color: blue"></div>
+<div style="height: 150px; width: 150px; background-color: green"></div>
+-->
+<!--
+<input type="text" id="text" name="text" title="Логин"/><br><br>
+<input type="password" id="password" name="password" title="Пароль"/>
+<input type="radio" id="radio" name="radio" onclick="return val1()" title="Введен"/>
+<input type="button" id="button" name="text" onclick="return val()" value="Готово"/>
+-->
+<!--<div id="div"><p>Абзац</p></div>
+<div id="div2" ></div>
+<img src="../image/5.jpg" alt="Image" width="30%">
+<img src="../image/1.jpg" alt="Image" width="25%">
+<img src="../image/2.jpg" alt="Image" width="25%"><br><br>
+
+<a href="#">Ссылка один</a><br><br>
+<a href="#">Ссылка два</a>-->
+
+<script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script>
+    function hideComments() {
+        $("#comments").fadeIn(1000, function () {
+            $("#hide").hide();
+            $("#show").show();
+        });
+    }
+    function showComments() {
+        $("#comments").fadeOut(1000, function () {
+            $("#hide").show();
+            $("#show").hide();
+        });
+    }
+    /*    function hideComments() {
+            $("#comments").hide(500, function () {
+                $("#hide").hide();
+                $("#show").show();
+            });
+        }
+        function showComments() {
+            $("#comments").show(500, function () {
+                $("#hide").show();
+                $("#show").hide();
+            });
+        }*/
+    $(document).ready(function () {
+        $("#hide").bind("click", hideComments);
+        $("#show").bind("click", showComments);
+    });
+
+    /*    $(document).ready(function () {
+            $(document).on("click", "#add_comment", function () {
+                var form = $('form[name="form"]').css("display", "block");
+                $("#add_comment").replaceWith(form);
+            });
+
+            $(document).on("click", "input[name='send']", function () {
+                var comment = $("textarea[name='field']").val();
+                alert("Подождите");
+                $("<p>" + comment + "</p>").appendTo("#comments");
+            })
+        });*/
+    /*    function incSize(event) {
+            var width = Number(event.target.style.width.substring(0, event.target.style.width.length - 2));
+            event.target.style.width = (width + 5) + "px";
+            /!*$(event.target).unbind();*!/
+
+            $("<p>Координаты мышки при нажатии: x - " + event.screenX + ", y - " + event.screenY + " </p>").insertAfter("div:last");
+        }
+        $(document).ready(function () {
+            $('div').bind("click", incSize);
+            $(document).on("click", "p", function () {
+                alert('Test');
+            })
+        });*/
+
+    /*function val() {
+      var x =  $("#text").val();
+      alert(x);}
+    function val1() {
+        var y =  $("#password").val();
+        alert(y);}*/
+
+    /*    $("<p>Небольшой текст </p>").appendTo("div");
+        $("<p>Небольшой текст </p>").prependTo("div");
+        $("<p>insertBefore </p>").insertBefore("div");
+        $("<p>insertBefore </p>").insertAfter("div");*/
+
+    /*$("div").append("<span>Простой текст</span>");
+    $("img").appendTo($("#div2"));
+    $("a").wrap("<p style='display: none'></p>");
+    $('#div').remove();
+    $('#div2').empty();
+    $('div').append("<span>Простой текст</span>");*/
+
+    /*
+        var block = $("#div").clone();
+        block.html("<p>Новый абзац</p>");
+        block.css("font-size", "25px").css("background-color", "red").css("color", "#9999999")
+        $("body").append(block);
+    */
+
+</script>
+
+</body>
+</html>

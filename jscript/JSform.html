@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<form action="" method="post" name="test" id="form">
+    <label for="name">Имя</label>
+    <input type="text" name="name" placeholder="Имя" id="name"/><br/><br/>
+    <label for="email">E-mail</label>
+    <input type="email" name="email" placeholder="E-mail" id="email"/><br/><br/>
+    <label for="password">Пароль</label>
+    <input type="password" name="password" placeholder="Пароль" id="password"/><br/><br/>
+    <label for="repassword">Проверка пароля</label>
+    <input type="password" name="repassword" placeholder="Введите пароль" id="repassword"/><br/><br/>
+    <span>Пол</span>
+    <input type="radio" name="state" id="state" value="Мужской"/>
+    <label for="state">Мужской</label>
+    <input type="radio" name="state" id="statej" value="Женский"/>
+    <label for="statej">Женский</label><br/><br/>
+    <input type="button" name="button" value="Готово" onclick="valid(document.getElementById('form'))">
+</form>
+
+
+<script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script>
+    function valid(form) {
+        var x = '';
+        var name = form.name.value;
+        var email = form.email.value;
+        var password = form.password.value;
+        var repassword = form.repassword.value;
+        var state = form.state.value;
+        var r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+
+        if (name === "" || name === " ")
+            x += "Вы не ввели свое имя \n";
+
+/*        if (email.split("@").length - 1 === 0)
+            x += "Вы ввели некорректный e-mail\n";*/
+
+        if (email !== r)
+            x += "Вы ввели некорректный e-mail\n";
+
+/*        if (r.test(email) === false)
+            x += "Вы ввели некорректный e-mail\n";*/
+
+        if (password === "")
+            x += "Вы не ввели пароль\n";
+
+        if (password !== repassword)
+            x += "Пароли не совпадают\n";
+
+        if (state === "")
+            x += "Не указан пол";
+
+        if (x)
+            alert(x);
+        else
+            window.location = "http://javascript.ru";
+    }
+</script>
+</body>
+</html>

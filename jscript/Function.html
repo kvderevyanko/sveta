@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<script src="../bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+            var p = "Число Пи - " + Math.PI;
+            p += "\nЧисло Е - "+ Math.E;
+            p += "\nМодуль -7 - "+ Math.abs(-7);
+            p += "\nСинус 0.3 - "+ Math.sin(0.3);
+            p += "\nТангес 0.7 - "+ Math.tan(0.7);
+            p += "\nСлучайное число - "+ (Math.random()*100);
+            p += "\nСлучайное число от 0 до 99 - " + Math.round(Math.random()*100);
+            p += "\nСлучайное число от 0 до 10 - " + Math.floor(Math.random()*11);
+            alert(p);
+
+            var date = new Date();
+            text = "\nГод сейчас - " + date.getFullYear();
+            text += "\nМесяц сейчас - " + (date.getMonth()+1);
+            text += "\nДень сейчас - " + date.getDate();
+            text += "\nЧасов сейчас - " + date.getHours();
+            text += "\nМинут сейчас - " + date.getMinutes();
+            text += "\nСекунд сейчас - " + date.getSeconds();
+            alert(text);
+
+        var date = new Date(2000, 0, 12, 14, 23, 43);
+        date.setMinutes(42)
+        text = "\nГод сейчас - " + date.getFullYear();
+        text += "\nМесяц сейчас - " + date.getMonth();
+        text += "\nДень сейчас - " + date.getDate();
+        text += "\nЧасов сейчас - " + date.getHours();
+        text += "\nМинут сейчас - " + date.getMinutes();
+        text += "\nСекунд сейчас - " + date.getSeconds();
+        alert(text);
+
+    var arr = new Array (2, 3, 56, 12, 23, 590, 123, 2);
+    text = "Длина массива - " + arr.length;
+    text += "\nМассив состоит из - " + arr.join(", ");
+    text += "\nСортированный массив - " + (arr.sort()).join(", ");
+    alert(text);
+
+    var str = "Небольшая строка";
+    var text = "Длина строки - " + str.length;
+    text +="\nСтрока в верхнем регистре -  " + str.toUpperCase();
+    text +="\nСтрока в верхнем регистре -  " + str.toUpperCase();
+    text +="\nСтрока в нижнем регистре -  " + str.toLowerCase();
+    text +="\nОбрезанная строка -  " + str.substring(1, 5);
+    text +="\nОбрезанная строка 2 -  " + str.substr(1, 5);
+    text +="\nБуква О (3ий символ) -  " + str.charAt(3);
+    text +="\nСтро начинается с индекса -  " + (str.indexOf("ккавп"));
+    alert(text);
+
+</script>
+
+</body>
+</html>
